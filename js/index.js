@@ -41,13 +41,35 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const navBar = document.querySelectorAll("a");
+
+//NAV MENU STYLE AND TEXT
+let navBar = document.querySelectorAll("a");
 navBar[0].textContent = "Services"
 navBar[1].textContent = "Product"
 navBar[2].textContent = "Vision"
 navBar[3].textContent = "Features"
 navBar[4].textContent = "About"
 navBar[5].textContent = "Contact"
+
+//NAV TEXT COLOR
+navBar[0].style.color = "green"
+navBar[1].style.color = "green"
+navBar[2].style.color = "green"
+navBar[3].style.color = "green"
+navBar[4].style.color = "green"
+navBar[5].style.color = "green"
+
+//NAV ADD MENU ITEMS
+const newNavOne = document.createElement("a");
+newNavOne.textContent = "Careers"
+newNavOne.style.color = "green"
+const newNavTwo = document.createElement("a");
+newNavTwo.textContent = "Philanthropy"
+newNavTwo.style.color = "green"
+
+let fullNav = document.querySelector("nav");
+fullNav.prepend(newNavOne);
+fullNav.appendChild(newNavTwo);
 
 // CTA SECTION DOM CODE
 const ctaHeadline = document.querySelector('h1');
@@ -64,7 +86,7 @@ ctaText.style.marginRight = "0px"
 ctaText.style.width = "46.3%"
 
 //MIDDLE IMAGE DOM CODE
-const middleImg = document.querySelector(".middle-img");
+const middleImg = document.querySelector("#middle-img");
 middleImg.src ="img/mid-page-accent.jpg"
 
 //H4 DOM CODE
