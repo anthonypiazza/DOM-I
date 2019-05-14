@@ -40,3 +40,79 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//NAV MENU STYLE AND TEXT
+let navBar = document.querySelectorAll("a");
+navBar[0].textContent = "Services"
+navBar[1].textContent = "Product"
+navBar[2].textContent = "Vision"
+navBar[3].textContent = "Features"
+navBar[4].textContent = "About"
+navBar[5].textContent = "Contact"
+
+//NAV TEXT COLOR
+navBar[0].style.color = "green"
+navBar[1].style.color = "green"
+navBar[2].style.color = "green"
+navBar[3].style.color = "green"
+navBar[4].style.color = "green"
+navBar[5].style.color = "green"
+
+//NAV ADD MENU ITEMS
+const newNavOne = document.createElement("a");
+newNavOne.textContent = "Careers"
+newNavOne.style.color = "green"
+const newNavTwo = document.createElement("a");
+newNavTwo.textContent = "Philanthropy"
+newNavTwo.style.color = "green"
+
+let fullNav = document.querySelector("nav");
+fullNav.prepend(newNavOne);
+fullNav.appendChild(newNavTwo);
+
+// CTA SECTION DOM CODE
+const ctaHeadline = document.querySelector('h1');
+ctaHeadline.textContent = "DOM Is Awesome"
+
+const ctaButton = document.querySelector("button");
+ctaButton.textContent = "Get Started"
+
+const ctaImage = document.querySelector("#cta-img");
+ctaImage.src = "img/header-img.png"
+
+ctaText = document.querySelector(".cta-text");
+ctaText.style.marginRight = "0px"
+ctaText.style.width = "46.3%"
+
+//MIDDLE IMAGE DOM CODE
+const middleImg = document.querySelector("#middle-img");
+middleImg.src ="img/mid-page-accent.jpg"
+
+//H4 DOM CODE
+const blankSectionHeaders = document.querySelectorAll("h4");
+blankSectionHeaders[0].textContent = "Features"
+blankSectionHeaders[1].textContent = "About"
+blankSectionHeaders[2].textContent = "Services"
+blankSectionHeaders[3].textContent = "Product"
+blankSectionHeaders[4].textContent = "Vision"
+blankSectionHeaders[5].textContent = "Contact"
+
+
+//CONTACT CLASS DOM CODE
+let contactClass = document.querySelector(".contact")
+contactClass.style.width = "20%"
+
+
+//P DOM CODE
+const blankSectionParagraphs = document.querySelectorAll("p");
+blankSectionParagraphs[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+blankSectionParagraphs[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+blankSectionParagraphs[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+blankSectionParagraphs[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+blankSectionParagraphs[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+blankSectionParagraphs[5].textContent = "123 Way 456 Street Somewhere, USA"
+blankSectionParagraphs[6].textContent = "1 (888) 888-8888"
+blankSectionParagraphs[7].textContent = "sales@greatidea.io"
+blankSectionParagraphs[8].textContent = "Copyright Great Idea! 2018"
+
